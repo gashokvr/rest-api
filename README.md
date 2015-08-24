@@ -6,7 +6,7 @@ This is an HTTPS-only API. Authentications are performed based on the email addr
 
 The Email and API key should pass basic HTTP Authentication. For this, use email address as the username and the respective API Key as the password)
 
-###API Key
+###API Key1.14
 - You may access the API Key from Admin Settings -> API & Analytics -> API Key
 - Use the first one (API Key for REST client) for all the REST API calls.
 
@@ -728,7 +728,7 @@ curl https://{domain}.agilecrm.com/dev/api/contacts/change-owner -H "Content-Typ
 ###dev/api/campaigns/enroll/email
 Method: POST
 
-- This is used when a contact added to campaign (with an email address)
+- This can be used when a contact needs to be added to a campaign with the contact's email address. In other words, to subscribe a contact to a campaign.
 
 ###Using curl
 ```sh
@@ -747,7 +747,7 @@ curl https://{domain}.agilecrm.com/dev/api/campaigns/enroll/email -H "Accept: ap
 ###dev/api/campaigns/unsubscribe
 Method: POST
 
-- This is used when a contact needs to be taken off a campaign with the contact's email address. In other words, to unsubscribe a contact from a campaign.
+- This can be used when a contact needs to be taken off a campaign with the contact's email address. In other words, to unsubscribe a contact from a campaign.
 
 ###Using curl
 ```sh
